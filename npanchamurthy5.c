@@ -35,11 +35,17 @@ int main()
 	// printf("\nScoped Variable Value: %d\n", scoped_var);
 	
 	int arr_ints[10];
+
+	int j = 0;
+	for (j; j < 10; j++)
+	{
+		arr_ints[j] = j+1;
+	}
 	
 	int i = 0;
 	for (i; i < 10; i++)
 	{
-		printf(" Element %d Address: %p\n", i, &arr_ints[i]);
+		printf(" Element %d Value %d Address: %p\n", i, arr_ints[i], &arr_ints[i]);
 	}
 
 	return EXIT_SUCCESS;
